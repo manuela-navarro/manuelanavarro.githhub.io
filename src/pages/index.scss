@@ -1,0 +1,34 @@
+.container {
+}
+
+.banner-container {
+  height: 300px;
+  text-align: center;
+  margin-top: 250px;
+
+  .text-white {
+    color: #FFF;
+  }
+
+
+  .banner-title {
+    font-size: 43px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: 38.7px;
+    color: #707070;
+  }
+
+  .banner-subtitle {
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 81.19px;
+    color: #707070;
+  }
+
+}
