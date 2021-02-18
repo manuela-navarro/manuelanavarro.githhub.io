@@ -14,7 +14,7 @@ const items: NavBarItem[] = [
   },
   {
     label: 'Contacto',
-    path: '#contacto',
+    path: '#contact',
   },
 ]
 
