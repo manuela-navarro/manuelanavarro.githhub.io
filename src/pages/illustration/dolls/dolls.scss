@@ -1,0 +1,17 @@
+@import "../../../styles/helpers";
+
+.dolls-page {
+  .dolls-images {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @include phone {
+      grid-template-columns: 1fr;
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

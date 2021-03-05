@@ -1,4 +1,6 @@
 @import "src/styles/colors";
+@import "src/styles/variables";
+@import "src/styles/helpers";
 
 .home-page {
 
@@ -20,8 +22,28 @@
     height: 600px;
     text-align: center;
 
+    @include mobile {
+      height: 390px;
+    }
+
     .banner {
       width: 100%;
+      position: relative;
+      padding: 15%;
+
+      img {
+        content:url("/static/images/TITULO.svg");
+      }
+
+
+      @include mobile {
+        padding: 0;
+
+        img {
+          width: 100%;
+          content:url("/static/images/TITULO-MOBILE.svg");
+        }
+      }
 
       .text-white {
         color: #FFF;
@@ -35,6 +57,31 @@
         line-height: 1.42;
         letter-spacing: 38.7px;
         color: #707070;
+
+        &:before {
+          content: " ";
+          width: 231.5px;
+          height: 235.5px;
+          background: url("/static/images/manchaTituloVerde.svg") no-repeat;
+          position: absolute;
+          left: 185px;
+          bottom: 160px;
+        }
+
+        &:after {
+          content: " ";
+          width: 116.4px;
+          height: 144.5px;
+          background: url("/static/images/manchaTituloNaranja.svg") no-repeat;
+          position: absolute;
+          right: 270px;
+          bottom: 320px;
+        }
+
+        span {
+          position: relative;
+          z-index: 100;
+        }
       }
 
       .banner-subtitle {
@@ -45,50 +92,11 @@
         line-height: 1.43;
         letter-spacing: 81.19px;
         color: #707070;
-      }
-    }
-  }
 
-  .projects-dashboard {
-    min-height: 800px;
-
-    .categories-container {
-      padding: 0 300px;
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
-      text-align: center;
-      column-gap: 20px;
-      row-gap: 20px;
-      justify-content: center;
-      align-content: center;
-
-      .category {
-        width: 300px;
-        height: 300px;
-        margin: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFF;
-        border-radius: 50%;
-
-        &:nth-child(1) {
-          background-color: $green;
+        span {
+          position: relative;
+          z-index: 100;
         }
-
-        &:nth-child(2) {
-          background-color: $orange;
-        }
-
-        &:nth-child(3) {
-          background-color: $yellow;
-        }
-
-        &:nth-child(4) {
-          background-color: $blue;
-        }
-
       }
     }
   }
@@ -122,27 +130,35 @@
           margin-bottom: 10px;
         }
 
-        .label { display: block; }
+        .label {
+          display: block;
+        }
+
         &.mail {
           .color-dot {
             background-color: $green;
           }
+
           .label {
             color: $green;
           }
         }
+
         &.linkedin {
           .color-dot {
             background-color: $orange;
           }
+
           .label {
             color: $orange;
           }
         }
+
         &.cellphone {
           .color-dot {
             background-color: $yellow;
           }
+
           .label {
             color: $yellow;
           }

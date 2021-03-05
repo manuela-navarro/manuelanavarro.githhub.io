@@ -1,3 +1,5 @@
+@import "src/styles/helpers";
+
 .nav-bar {
   display: flex;
   justify-content: space-evenly;
@@ -5,9 +7,7 @@
   height: 140px;
 
   .link {
-    width: 182px;
     height: 16px;
-    font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

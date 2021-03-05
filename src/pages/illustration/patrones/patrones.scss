@@ -1,0 +1,14 @@
+@import "../../../styles/helpers";
+
+.patrones-page {
+  .patrones-images {
+    margin-top: 50px;
+
+    img {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 30px;
+      object-fit: cover;
+    }
+  }
+}

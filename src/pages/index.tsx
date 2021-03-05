@@ -1,28 +1,18 @@
-import { FunctionComponent } from 'react'
-import './index.scss'
+import { FunctionComponent } from 'react';
+import './index.scss';
+import HomeDashboard from '../components/HomeDashboard';
+import NavBar from '../components/NavBar';
 
 const Home: FunctionComponent = () => {
   return (
     <div className="home-page">
+      <NavBar />
       <div className="banner-container">
         <div className="banner">
-          <h2 className="banner-title">
-            <span className="text-white">ma</span>nuela navarr<span className="text-white">o</span>
-          </h2>
-          <h4 className="banner-subtitle">
-            <span className="text-white">PO</span>RTAFOLIO
-          </h4>
+          <img alt="title" />
         </div>
       </div>
-      <section id="projects" className="projects-dashboard">
-        <h4 className="title">PROYECTOS</h4>
-        <div className="categories-container">
-          <div className="category">UX/UI</div>
-          <div className="category">BRANDING</div>
-          <div className="category">ILUSTRACIÓN</div>
-          <div className="category">ESPACIOS</div>
-        </div>
-      </section>
+      <HomeDashboard />
       <section id="contact" className="contact-info">
         <h4 className="title">CONTACTO</h4>
         <div className="info-container">
@@ -42,7 +32,7 @@ const Home: FunctionComponent = () => {
               rel="noreferrer"
               href="https://www.linkedin.com/in/manuela-navarro/"
             >
-              https://www.linkedin.com/in/manuela-navarro/
+              manuela-navarro
             </a>
           </div>
           <div className="info cellphone">
@@ -55,7 +45,7 @@ const Home: FunctionComponent = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

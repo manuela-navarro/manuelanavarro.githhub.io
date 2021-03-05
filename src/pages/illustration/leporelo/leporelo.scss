@@ -1,0 +1,29 @@
+@import "../../../styles/helpers";
+
+.leporelo-page {
+  .leporelo-images {
+
+    img {
+      width: 100%;
+    }
+
+    .leporelo-segmented {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 10px;
+
+      @include phone {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .leporelo-line {
+      width: 100%;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    }
+  }
+}
