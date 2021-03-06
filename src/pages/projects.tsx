@@ -1,3 +1,5 @@
+import { FunctionComponent } from 'react';
+
 interface ProjectItem {
   title: string;
   subtitle: string;
@@ -91,3 +93,6 @@ export const projectsCollection: ProjectCollectionItem[] = [
     ],
   },
 ];
+
+const defaultComponent: FunctionComponent = () => <></>;
+export default defaultComponent;

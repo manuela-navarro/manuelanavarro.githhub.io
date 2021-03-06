@@ -1,29 +1,28 @@
 import { FunctionComponent } from 'react';
 import Link from 'next/link';
-import './twins.scss';
+import './blooming.scss';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import { twinsProcessSteps } from './data.tsx';
+import { bloomingProcessSteps } from './data.tsx';
 import Process from '../../../components/Process';
 
-const TwinsPage: FunctionComponent = () => {
-  const graphicsArr = [1, 2, 3, 4, 5, 6, 7];
+const BloomingPage: FunctionComponent = () => {
+  const graphicsArr = [1, 2, 3];
   return (
-    <div className="page twins-page">
+    <div className="page blooming-page">
       <Link href={'/'}>
         <button className="back-button">Volver</button>
       </Link>
       <section className="row project-description mb-50">
         <div className="project-info col-xs-24 col-md-10">
-          <h3 className="title">TWINS</h3>
+          <h3 className="title">BLOOMING</h3>
           <p>
-            Twins es un emprendimiento de pastelería saludable enfocado en mejorar la salud de las
-            personas. Este negocio busca concientizar a las personas sobre el consumo de azúcar sin
-            privarlos de postres ni antojos.
+            Esta marca busca sembrar y hacer florecer desde adentro del armario a una mujer llena de
+            conciencia y amor por ella y por el mundo. Esta marca busca reconciliar el estilo con la
+            sostenibilidad logrando crear una forma de vida donde verse bien significa estar bien
+            con uno mismo y con el medio ambiente.
           </p>
-          <a href="https://www.instagram.com/twinstortasycupcakes/">
-            instagram.com/twinstortasycupcakes
-          </a>
+          <p> La mujer que lleva esta marca sabe que : DO GOOD, LOOK GOOD.</p>
           <div className="info">
             <p>
               Año: <span className="number">2020</span>
@@ -37,25 +36,29 @@ const TwinsPage: FunctionComponent = () => {
           </div>
         </div>
         <div className="col-12 moodboard">
-          <img src={`/static/images/twins/moodboard.png`} alt={`moodboard`} />
+          <img src={`/static/images/blooming/moodboard.png`} alt={`moodboard`} />
         </div>
       </section>
       <section className="tools"></section>
       <section className="process-container">
         <h4 className="title">Proceso</h4>
-        <Process steps={twinsProcessSteps} />
+        <Process steps={bloomingProcessSteps} />
       </section>
       <section className="evidence row mb-30">
         <div className="col-xs-24 col-lg-7 logo">
           <h4 className="title">LOGO PRINCIPAL</h4>
-          <img src="/static/images/twins/logoPrincipal.png" alt="logo" className="principal-logo" />
+          <img
+            src="/static/images/blooming/logoPrincipal.png"
+            alt="logo"
+            className="principal-logo"
+          />
         </div>
         <div className="col-xs-24 col-lg-17 logo-variations">
           <h4 className="title">VARIACIONES DE LOGO</h4>
           <div className="logos">
             <div className="logo-with-title">
               <img
-                src="/static/images/twins/logoRedondo.png"
+                src="/static/images/blooming/logoRedondo.png"
                 alt="logo"
                 className="principal-logo"
               />
@@ -63,19 +66,11 @@ const TwinsPage: FunctionComponent = () => {
             </div>
             <div className="logo-with-title">
               <img
-                src="/static/images/twins/logoSimbolico.png"
+                src="/static/images/blooming/logoSimbolico.png"
                 alt="logo"
                 className="principal-logo"
               />
               <p>Simbólico</p>
-            </div>
-            <div className="logo-with-title">
-              <img
-                src="/static/images/twins/logoSencillo.png"
-                alt="logo"
-                className="principal-logo"
-              />
-              <p>Sencillo</p>
             </div>
           </div>
         </div>
@@ -86,18 +81,14 @@ const TwinsPage: FunctionComponent = () => {
           {graphicsArr.map((graphicIndex) => (
             <img
               key={graphicIndex}
-              src={`/static/images/twins/graphics${graphicIndex}.png`}
+              src={`/static/images/blooming/graphics${graphicIndex}.png`}
               alt={`graphic${graphicIndex}`}
             />
           ))}
         </div>
       </section>
-      <section className="pattern">
-        <h4 className="title">PATRÓN</h4>
-        <img src={`/static/images/twins/pattern.png`} alt={`pattern`} />
-      </section>
     </div>
   );
 };
 
-export default TwinsPage;
+export default BloomingPage;

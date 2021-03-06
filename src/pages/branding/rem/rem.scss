@@ -1,0 +1,56 @@
+@import "../../../styles/helpers";
+
+.rem-page {
+
+  .project-description {
+    .moodboard {
+
+      @include mobile {
+        display: none;
+      }
+
+      img {
+        height: 500px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .evidence-container {
+    .evidence {
+
+      @include mobile {
+        display: block;
+      }
+
+      .evidence-item {
+        text-align: center;
+
+
+        img {
+          height: 320px;
+
+
+          @include mobile {
+            display: block;
+          }
+
+
+        }
+      }
+
+
+    }
+  }
+
+  .logos-container {
+    .logo-container {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+}

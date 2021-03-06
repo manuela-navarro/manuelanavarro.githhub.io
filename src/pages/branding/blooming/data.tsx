@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { ProcessStep } from '../../../components/Process';
 
-export const twinsProcessSteps: ProcessStep[] = [
+export const bloomingProcessSteps: ProcessStep[] = [
   {
     id: 1,
     content: (
@@ -9,7 +9,8 @@ export const twinsProcessSteps: ProcessStep[] = [
         <h4>Workshop de propuesta de valor</h4>
         Se hizo un taller en el cual a través del Canvas de propuesta de valor, la pirámide de
         valores y ejercicios como los cinco por qué se definieron los valores de la marca, cómo
-        quería ser vista por sus clientes y cómo quería sentirse.
+        quería ser vista por sus clientes y cómo quería sentirse, ademaás de elegir el nombre
+        correcto.
       </>
     ),
   },
@@ -31,8 +32,8 @@ export const twinsProcessSteps: ProcessStep[] = [
       <>
         <h4>Logo</h4>
         Se diseñaron tres propuestas de logo que cumplieran con los valores y objetivos de la marca
-        para que el cliente escogiera con cual de los diseños se identificaba hacerle modificaciones
-        y sacar el logo principal.
+        para que el cliente escogiera con cual de los diseños se identificaba, hacerle
+        modificaciones y sacar el logo principal.
       </>
     ),
   },
@@ -62,7 +63,7 @@ export const twinsProcessSteps: ProcessStep[] = [
       <>
         <h4>Manual de marca</h4>
         Se creó un manual de marca explicando las aplicaciones del logo, las aplicaciones de la
-        apertura gráfica , la paleta de color y por supuesto los valores, misión y visión.
+        apertura gráfica , la paleta de color y por supuesto los valores de marca.
       </>
     ),
   },

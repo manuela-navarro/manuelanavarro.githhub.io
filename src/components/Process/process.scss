@@ -1,0 +1,41 @@
+@import "src/styles/helpers";
+
+.process {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+
+  .process-item {
+    padding: 35px 40px 35px 0;
+    position: relative;
+    border-top: 1px solid #707070;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: -8px;
+      left: 0;
+      border-radius: 50%;
+      background-color: $orange;
+    }
+
+    .process-item-content {
+
+
+      * {
+        margin: 0;
+      }
+    }
+  }
+}
